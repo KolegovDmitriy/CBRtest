@@ -1,4 +1,4 @@
-
+<h1>{{SearchParam}}</h1>
 
 <div class="container">
 
@@ -7,23 +7,26 @@
       {{Planets | json}}
     </pre>  -->
 
-    <p>Название планеты:
+    <!-- <p>Название планеты:
       {{Planets[2].name}}
     </p>      
-  </div>
+  </div> -->
 
-  <app-search>
+  <app-search
+  (onSearch) = "updatatext($event)"
+  >
 
   </app-search>
 
   <hr>
 
   <app-table
+  *ngFor="let planet of Planets"
+  [Planet]="planet"
     
-     *ngFor="let planet of Planets"
-     [Planet]="planet"
   >
   </app-table>
 
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+

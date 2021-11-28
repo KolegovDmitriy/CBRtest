@@ -29,6 +29,8 @@ export class AppComponent implements OnInit {
   
   //  Planets!: Planet[];
 
+  SearchParam !: string;
+
   Planets: Planet[] = [
     {
       "name": "Alderaan",
@@ -1034,6 +1036,10 @@ export class AppComponent implements OnInit {
   //       this.Planets = Planets
   //     })
 
+  }
+
+  updatatext(text: string): void{
+    this.SearchParam = text;
   }
 }
 
