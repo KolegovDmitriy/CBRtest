@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   
   //  Planets!: Planet[];
 
-  Planets:Planet[] = [
+  Planets: Planet[] = [
     {
       "name": "Alderaan",
       "rotation_period": "24",

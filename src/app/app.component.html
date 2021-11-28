@@ -7,14 +7,23 @@
       {{Planets | json}}
     </pre>  -->
 
-    
     <p>Название планеты:
       {{Planets[2].name}}
-    </p>
-      
- 
-    
+    </p>      
   </div>
+
+  <app-search>
+
+  </app-search>
+
+  <hr>
+
+  <app-table
+    
+     *ngFor="let planet of Planets"
+     [Planet]="planet"
+  >
+  </app-table>
 
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
