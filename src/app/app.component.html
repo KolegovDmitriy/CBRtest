@@ -1,4 +1,4 @@
-<h1>{{SearchParam}}</h1>
+<!-- <h1>Ввод:{{SearchParam}}</h1> -->
 
 <div class="container">
 
@@ -15,18 +15,18 @@
   <app-search
   (onSearch) = "updatatext($event)"
   >
-
+  
   </app-search>
 
   <hr>
 
   <app-table
   *ngFor="let planet of Planets"
-  [Planet]="planet"
- 
+  [Planet]="planet" 
+  [SearchParam]="SearchParam"
   >
+  
   </app-table>
 
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-

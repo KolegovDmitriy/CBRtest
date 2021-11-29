@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   
   //  Planets!: Planet[];
 
-  SearchParam !: string;
+  SearchParam : string = 'Alderaan'  ;
 
   Planets: Planet[] = [
     {

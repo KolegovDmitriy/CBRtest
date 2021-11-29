@@ -8,11 +8,17 @@ import { Planet } from '../app.component';
 })
 export class TableComponent implements OnInit {
 
-  @Input() Planet!: Planet;
+ @Input() Planet!: Planet;
+
+ @Input() SearchParam !:string;
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
+ 
+
 
 }

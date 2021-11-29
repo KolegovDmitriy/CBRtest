@@ -1,8 +1,9 @@
-
-<div class="Planet" >
-    <!-- <h4 *ngIf="Planet.name == 'Alderaan'" >{{Planet.name}}</h4> -->
-    <h4>{{Planet.name}}</h4>
+<h1  *ngIf="Planet.name == 'Alderaan'">SearchParam в tableComponent: {{SearchParam}}</h1>
+<div class="Planet" *ngIf="Planet.name == 'Hoth'" >
+    <h4 >{{Planet.name}}</h4>
     <p>{{Planet.rotation_period}}</p>
+    <!-- <h4>{{Planet.name}}</h4>
+    <p>{{Planet.rotation_period}}</p> -->
 </div>
 
 
@@ -18,3 +19,6 @@
     </div>
   </ng-template> -->
   
+
+  <!-- Alderaan   Hoth-->
+  <!-- *ngIf="Planet.name == {{SearchParam}} -->
