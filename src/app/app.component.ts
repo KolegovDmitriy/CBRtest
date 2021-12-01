@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import {HttpClient} from '@angular/common/http'
+// import {HttpClient} from '@angular/common/http' // импортирование библиотеки для HttpClient
 
 
 export interface Planet {
@@ -27,9 +27,9 @@ export interface Planet {
 
 export class AppComponent implements OnInit {
   
-  //  Planets!: Planet[];
+  //  Planets!: Planet[];//объявление массива с интерфейсом для получения данных из json при запуске httpclient 
 
-  SearchParam : string = 'Alderaan'  ;
+  SearchParam : string = '';
 
   Planets: Planet[] = [
     {
@@ -1027,29 +1027,18 @@ export class AppComponent implements OnInit {
     }
   ]
 
-  // constructor(private http: HttpClient) {}
+  // constructor(private http: HttpClient) {} // конструктор для работы с httpclient
 
   ngOnInit() {
-  // this.http.get<Planet[]>('https://swapi.dev/api/planets')
+  // this.http.get<Planet[]>(`https://swapi.co/api/planets?name=${this.SearchParam}`) // запрос к API
   //     .subscribe(Planets => {
   //       console.log('Response', Planets)
   //       this.Planets = Planets
   //     })
-
   }
 
-  updatatext(text: string): void{
+  
+  updateSearch(text: string): void{
     this.SearchParam = text;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
