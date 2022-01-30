@@ -1,14 +1,6 @@
 <div class="container">
-    <app-search
-    (onSearch) = "updateSearch($event)">
-    </app-search>
-
-    <hr>
-
-    <app-table
-      *ngFor="let planet of Planets"
-      [Planet]="planet" 
-      [SearchParam]="SearchParam">
-    </app-table>
+	<app-search (onInputPlanet) = "EmitPlanetName($event)"></app-search>
+    	<hr>
+    <app-table [NamePlanetAPP]="NamePlanetAPP"
+	></app-table>	
 </div>
-

@@ -1,8 +1,8 @@
 <div>
     <input 
       type="text" 
-      [(ngModel)] = "text"
+      class="input-planet"      
       placeholder="Enter the name of the planet"
-      >
-    <button class="btn" on-click = "SearchPlanet()">Search</button>
+      (input)="InputPlanet($event)" autofocus>
 </div>
+

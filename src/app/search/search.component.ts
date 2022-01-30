@@ -1,6 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
-
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -8,28 +7,18 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  @Output() onSearch: EventEmitter<any> = new EventEmitter<any>()
+  @Output() onInputPlanet: EventEmitter<any> = new EventEmitter<any>()
 
-  text = '';
+  PlanetName = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  SearchPlanet(){
-    if(this.text.trim()){
-      text: this.text;
-      console.log('');
-      this.onSearch.emit(this.text);
-    } else {
-         alert("Введите символы кроме пробелов")
-         this.text = '';
-    }
-
-   
-
-
+  InputPlanet(event:any): void{
+    this.PlanetName = event.target.value;
+    this.onInputPlanet.emit(this.PlanetName)
   }
 
 }
