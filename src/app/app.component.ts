@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class AppComponent implements OnInit {
  
-  NamePlanetAPP: string = '';
+  NamePlanet: string = '';
 
   constructor() {    
   } 
@@ -17,6 +17,6 @@ export class AppComponent implements OnInit {
   }
  
   EmitPlanetName(NamePlanet:string){
-     this.NamePlanetAPP = NamePlanet;
+     this.NamePlanet = NamePlanet;
   }
 }

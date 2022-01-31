@@ -1,0 +1,29 @@
+<div>
+    <table class="cpecifications-planet" >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Rotation period</th>
+                <th>Orbital period</th>
+                <th>Diameter</th>
+                <th>Climate</th>
+                <th>Gravity</th>
+                <th>terrain</th>
+            </tr>
+        </thead>
+    
+        <tbody>        
+            <tr *ngFor="let item of planets">
+                <td>{{item.name}} </td>
+                <td>{{item.rotation_period}}</td>
+                <td>{{item.orbital_period}}</td>
+                <td>{{item.diameter}}</td>
+                <td>{{item.climate}}</td>
+                <td>{{item.gravity}}</td>
+                <td>{{item.terrain}}</td>
+            </tr>    
+        </tbody>
+    </table>
+</div>
+
+

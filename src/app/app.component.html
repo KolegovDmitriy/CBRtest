@@ -1,6 +1,5 @@
-<div class="container">
-	<app-search (onInputPlanet) = "EmitPlanetName($event)"></app-search>
+<div class="container">	
+	<app-input-planet (onInputPlanet) = "EmitPlanetName($event)"></app-input-planet>
     	<hr>
-    <app-table [NamePlanetAPP]="NamePlanetAPP"
-	></app-table>	
+	<app-cpecifications-planet [NamePlanet]="NamePlanet"></app-cpecifications-planet>
 </div>

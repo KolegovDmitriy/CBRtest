@@ -1,0 +1,17 @@
+.input-planet{    
+    width: 20%;
+    height: 25px; 
+    font-family: system-ui;    
+    font-size: 16px;
+    border: none;   
+    outline: 0;
+    border-bottom: 1px solid gray;
+    background-color: #f5f5f5;
+}
+
+.input-planet:focus {
+    border-bottom: 1px solid #03a9f4;
+    background-color: #eee;
+  }
+
+  
