@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-input-planet',
@@ -7,18 +7,10 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class InputPlanetComponent implements OnInit {
 
-  @Output() onInputPlanet: EventEmitter<any> = new EventEmitter<any>()
-
-  planetName = '';
-
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() { 
   }
 
-  InputPlanet(event:any): void{
-    this.planetName = event.target.value;
-    this.onInputPlanet.emit(this.planetName)
+  ngOnInit(): void {
   }
 
 }

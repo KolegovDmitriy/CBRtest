@@ -17,11 +17,13 @@ export interface planet {
   edited: string;
   url: string;
 }
+
 @Component({
   selector: 'app-cpecifications-planet',
   templateUrl: './cpecifications-planet.component.html',
   styleUrls: ['./cpecifications-planet.component.scss']
 })
+
 export class CpecificationsPlanetComponent implements OnChanges {
 
   planets: planet[] = [];
