@@ -9,10 +9,4 @@ describe('AppComponent', () => {
       ],
     }).compileComponents();
   });
-
-
-
-
-
-
 });
